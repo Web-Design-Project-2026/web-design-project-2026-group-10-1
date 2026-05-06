@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.main-header {
+    background-color: #0019ff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* ARTIST ROLLER */
+.artist-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.artist-text {
+    display: flex;
+    width: max-content;
+    animation: infinite-scroll 30s linear infinite;
+}
+
+.artist-move {
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.artist-move span {
+    margin-right: 50px;
+}
+
+@keyframes infinite-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
