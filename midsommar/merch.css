@@ -1,0 +1,17 @@
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item button {
+  margin-top: 10px;
+}
