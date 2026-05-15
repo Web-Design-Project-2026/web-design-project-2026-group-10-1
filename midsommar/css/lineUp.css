@@ -1,0 +1,47 @@
+/* Artist card */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 10px; 
+    background-color: white;
+}
+
+.artist-card h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Hide the extra artists initally */
+.hidden {
+    display: none;
+}
+
+/* Styling for See More button */
+.see-more-btn {
+    background-color: #ffcad4; /* Rosa färg */
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
