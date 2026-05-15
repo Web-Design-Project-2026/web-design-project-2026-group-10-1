@@ -172,6 +172,20 @@ nav a {
   }
 }
 
+
+.front-img {
+  width: 30rem;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.3rem;
+  background-color:
+}
+
+
+
+
 .footer {
   background: #f7ecd8;
   margin-top: 80px;
