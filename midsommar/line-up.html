@@ -6,40 +6,165 @@
     <title>Web Design Project</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/lineUp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
+  <header class="main-header">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-<section class="lineup-section">
-    <div class="day-header">
-        <h2>LINE-UP</h2>
-        <p>friday 10th july</p>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo-img" />
+      </div>
+    </header>
+     <div class="artist-wrapper">
+      <div class="artist-text">
+        <div class="artist-move">
+          <span>Victor Leksell</span>
+          <span>Molly Sandén</span>
+          <span>Veronica Maggio</span>
+          <span>Oskar Linnros</span>
+          <span>Miriam Bryant</span>
+          <span>Tjuvjakt</span>
+          <span>Bolaget</span>
+          <span>Newkid</span>
+          <span>Lovet</span>
+          <span>Benjamin Ingrosso</span>
+          <span>Linnéa Henriksson</span>
+        </div>
+        <div class="artist-move">
+          <span>Victor Leksell</span>
+          <span>Molly Sandén</span>
+          <span>Veronica Maggio</span>
+          <span>Oskar Linnros</span>
+          <span>Miriam Bryant</span>
+          <span>Tjuvjakt</span>
+          <span>Bolaget</span>
+          <span>Newkid</span>
+          <span>Lovet</span>
+          <span>Benjamin Ingrosso</span>
+          <span>Linnéa Henriksson</span>
+        </div>
+      </div>
     </div>
 
-    <div class="artist-grid" id="friday-grid">
-        <div class="artist-card">
-            <img src="images/zaraLarsson.jpg" alt="Zara Larsson">
-            <h3>ZARA LARSSON</h3>
-        </div>
-        <div class="artist-card">
-            <img src="images/mollySandén.jpg" alt="Molly Sandén">
-            <h3>MOLLY SANDÉN</h3>
-        </div>
-        <div class="artist-card">
-            <img src="images/HarryStyles.jpg" alt="Harry Styles">
-            <h3>HARRY STYLES</h3>
-        </div>
-        <div class="artist-card">
-            <img src="images/Shakira.jpg" alt="Shakira">
-            <h3>SHAKIRA</h3>
+    <nav class="navbar" id="side-menu">
+      <div class="menu-bar">
+        <a href="homepage.html">HOME</a>
+        <a href="line-up.html">LINE-UP</a>
+        <a href="tickets.html">TICKETS</a>
+        <a href="merch.html">MERCH</a>
+        <a href="cart.html">CART</a>
+      </div>
+    </nav>
+
+    <section class="lineup-section">
+        <div class="day-header">
+            <h2>LINE-UP</h2>
+            <p>friday 10th july</p>
         </div>
 
-        <div class="artist-card hidden">
-            <img src="images/PinkPantheress.jpg" alt="Artist Pink Pantheress">
-            <h3>PINK PANTHERESS</h3>
-        </div>
-    </div>
+        <div class="artist-grid" id="friday-grid">
+            <div class="artist-card">
+                <img src="images/zaraLarsson.jpg" alt="Artist Zara Larsson">
+                <h3>ZARA LARSSON</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/mollySandén.jpg" alt="Artist Molly Sandén">
+                <h3>MOLLY SANDÉN</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/HarryStyles.jpg" alt="Artist Harry Styles" class="move-down"> 
+                <h3>HARRY STYLES</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/Shakira.jpg" alt="Artist Shakira">
+                <h3>SHAKIRA</h3>
+            </div>
 
-    <button class="see-more-btn" onclick="showMore('friday-grid')">SEE MORE</button>
-</section>
+            <div class="artist-card hidden">
+                <img src="images/PinkPantheress.jpg" alt="Artist Pink Pantheress">
+                <h3>PINK PANTHERESS</h3>
+            </div>
+        </div>
+
+        <button class="see-more-btn" onclick="showMore('friday-grid')">SEE MORE</button>
+    </section>
+
+    <section class="lineup-section">
+        <div class="day-header">
+            <h2>LINE-UP</h2>
+            <p>saturday 11th july</p>
+        </div>
+
+        <div class="artist-grid" id="friday-grid">
+            <div class="artist-card">
+                <img src="images/SabrinaCarpenter.jpg" alt="Artist Sabrina Carpenter">
+                <h3>SABRINA CARPENTER</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/Sienna Spiro.jpg" alt="Artist Sienna Spiro">
+                <h3>SIENNA SPIRO</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/IconaPop.jpg" alt="Artist Icona Pop">
+                <h3>ICONA POP</h3>
+            </div>
+            <div class="artist-card">
+                <img src="images/RAYE.jpg" alt="Artist RAYE">
+                <h3>RAYE</h3>
+            </div>
+
+            <div class="artist-card hidden">
+                <img src="images/VeronicaMaggio.jpg" alt="Artist Veronica Maggio">
+                <h3>VERONICA MAGGIO</h3>
+            </div>
+        </div>
+
+        <button class="see-more-btn" onclick="showMore('friday-grid')">SEE MORE</button>
+    </section>
+
+    <footer><footer class="footer">
+
+    <section class="social-media">
+      <h2>SOCIAL MEDIA</h2>
+
+      <div class="social-icons">
+        <img src="./images/instagram.png" alt="">
+        <img src="./images/tiktok.png" alt="">
+        <img src="./images/facebook.png" alt="">
+        <img src="./images/x.png" alt="">
+      </div>
+
+      <p>share your experiences and stay for the journey!</p>
+    </section>
+
+    <section class="footer-grid">
+      <div class="faq">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <p>Can I purchase tickets on the gate?</p>
+        <p>What if I lost my tickets?</p>
+        <p>Can I get a refund or change my accreditation?</p>
+        <p>Can I park next to my tent?</p>
+        <p>What items are prohibited?</p>
+      </div>
+
+      <div class="subscribe">
+        <p>✉ subscribe for updates here!</p>
+        <p>____________ @_____.com</p>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <img src="./logo/logo.png" alt="">
+      <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+    </section>
+
+  </footer>
   </body>
 </html>
