@@ -172,20 +172,52 @@ nav a {
   }
 }
 
-
 .front-img {
-  width: 30rem;
+  width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: -1.3rem;
-  background-color:
 }
 
 
 
+/* COUNTDOWN */
+.countdown-container h2 {
+  font-family: "Anton", sans-serif;
+  padding-top: 2rem;
+}
+.countdown-container {
+  text-align: center;
+  background: #fbf1e1;
+  margin-top: -1.25rem;
+}
+.countdown-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.25rem;
+}
+.box {
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 80px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.box span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.dold {
+  display: none;
+}
 
+
+/* FOOTER */
 .footer {
   background: #f7ecd8;
   margin-top: 80px;
