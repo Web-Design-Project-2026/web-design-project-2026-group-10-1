@@ -54,9 +54,10 @@
 
 .artist-card h3 {
     text-align: center;
-    font-size: 0.9rem;
+    font-family: "playfair display black";
+    letter-spacing: 1px;
+    font-size: 1.5rem;
     margin-top: 10px;
-    text-transform: uppercase;
 }
 
 /* Hide the extra artists initally */
@@ -66,7 +67,11 @@
 
 /* Styling for See More button */
 .see-more-btn {
-    background-color: #ffcad4; /* Rosa färg */
+    background-color: #FBF1E1; 
+    color: #FF007F;
+    font-family: "anton";
+    font-size: 20pt;
+    letter-spacing: 1px;
     border: none;
     padding: 10px 25px;
     border-radius: 20px;
