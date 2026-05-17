@@ -1,3 +1,7 @@
+.countdown-container h2 {
+    font-family: "Anton", sans-serif;
+}
+
 .day-header {
     background-color: #FBF1E1;
     border-radius: 25px;
