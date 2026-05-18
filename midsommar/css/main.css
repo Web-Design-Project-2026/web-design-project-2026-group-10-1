@@ -6,17 +6,9 @@ body {
 }
 
 body {
-  margin: 0;
   font-family: "Playfair Display", serif;
 }
 
-h1,
-h2 {
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
-}
-
-button,
 nav a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
@@ -45,7 +37,7 @@ nav a {
 .artist-wrapper {
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: #fbf1e1;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
@@ -172,6 +164,7 @@ nav a {
   }
 }
 
+/* FRONT IMAGE */
 .front-img {
   width: 100%;
   height: auto;
@@ -191,6 +184,7 @@ nav a {
 .countdown-container {
   text-align: center;
   background: #fbf1e1;
+  height: 160px;
   margin-top: -1.25rem;
 }
 .countdown-boxes {
@@ -205,15 +199,49 @@ nav a {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: -30px;
 }
 .box span {
   display: block;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .dold {
   display: none;
+}
+
+/* INFO */
+.festival-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 70px;
+  margin-top: -1.5rem;
+  box-sizing: border-box;
+}
+
+.info h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #FBF1E1;
+
+  text-align: center;
+  margin-top: -2.5rem;
+
+}
+.info h2 {
+  font-family: Playfair Display Regular;
+  font-size: 16px;
+  color: #FBF1E1;
+
+  text-align: center;
+  margin: 80px;
+  margin-top: -0.5rem;
+}
+
+.map {
+  width: 25rem;
 }
 
 
@@ -254,22 +282,18 @@ nav a {
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   padding: 40px;
-
   gap: 40px;
 }
 
 .faq h2 {
   font-family: "Anton", sans-serif;
   font-size: 42px;
-
   margin-bottom: 15px;
 }
 
 .faq p {
   margin: 8px 0;
-
   font-family: "Playfair Display", serif;
 }
 
@@ -277,7 +301,6 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
   text-align: right;
 }
 
@@ -289,27 +312,20 @@ nav a {
 
 .footer-bottom {
   background: #2336ff;
-
   color: white;
-
   text-align: center;
-
   padding: 35px 20px;
 }
 
 .footer-bottom img {
   width: 130px;
-
   margin-bottom: 15px;
 }
 
 .footer-bottom p {
   font-size: 12px;
-
   max-width: 700px;
-
   margin: auto;
-
   line-height: 1.5;
 }
 
