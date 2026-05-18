@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+}
+
+.merch-section h1,
+.cart-section h1,
+.bestsellers h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 56px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.page-background {
+  background: linear-gradient(to bottom, #ff6a1a, #ff1f7a);
+  padding-bottom: 60px;
+}
+
+.merch-section {
+  text-align: center;
+  padding: 50px 30px 20px;
+}
+
+.view-more {
+  display: block;
+  margin: 40px auto;
+  padding: 13px 45px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 95%;
+  margin: auto;
+}
+
+.subtitle,
+.cart-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: white;
+}
+
+.item p,
+.product p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  height: 380px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.price-tag {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+
+  background: white;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+}
+
+.item img {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.item button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.bestsellers {
+  padding: 40px 30px;
+}
+
+.bestsellers h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.bestseller-box {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.bestseller-box span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.bestseller-box p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.quick-item {
+  height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-item img {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+  display: block;
+}
+
+.quick-item button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+}
+
+.item button,
+.quick-item button,
+.view-more,
+.checkout-button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#cart-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #2336ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  display: none;
+  z-index: 1000;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+}

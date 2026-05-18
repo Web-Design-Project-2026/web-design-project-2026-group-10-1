@@ -1,0 +1,151 @@
+.cart-section {
+  background: linear-gradient(to bottom, #ff6a1a, #ff1f7a);
+  min-height: 100vh;
+  padding: 50px 30px 80px;
+  text-align: center;
+}
+
+.cart-section h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 56px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.cart-subtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.cart-box {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.cart-header,
+.cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: 3px solid #2336ff;
+  padding: 15px;
+}
+
+.cart-header {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product p,
+.cart-row p {
+  font-family: "Playfair Display", serif;
+}
+
+.cart-total {
+  text-align: right;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.checkout-button {
+  margin-top: 30px;
+  padding: 13px 45px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.checkout-button:hover {
+  background: #2336ff;
+  color: white;
+}
+
+.bestsellers {
+  padding: 40px 30px;
+}
+
+.bestsellers h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.bestseller-box {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.bestseller-box span {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.bestseller-box p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.quick-item {
+  height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-item img {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+  display: block;
+}
+
+.quick-item button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+}
+
+.item button,
+.quick-item button,
+.view-more,
+.checkout-button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}

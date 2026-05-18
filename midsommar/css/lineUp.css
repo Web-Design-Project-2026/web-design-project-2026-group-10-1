@@ -1,0 +1,85 @@
+.countdown-container h2 {
+    font-family: "Anton", sans-serif;
+}
+
+.day-header {
+    background-color: #FBF1E1;
+    border-radius: 25px;
+    padding: 15px 30px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+}
+
+.day-header h2 {
+    color: #0019FF;
+    font-family: "anton";
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.day-header p {
+    color: #0019FF; 
+    font-family: "playfair display regular"; 
+    font-size: 1.1rem;
+    margin: 5px 0 0 0 ;
+}
+
+/* Artist card */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.artist-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 10px; 
+    background-color: white;
+    object-position: center top;
+}
+
+.artist-card h3 {
+    text-align: center;
+    font-family: "playfair display black";
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Hide the extra artists initally */
+.hidden {
+    display: none;
+}
+
+/* Styling for See More button */
+.see-more-btn {
+    background-color: #FBF1E1; 
+    color: #FF007F;
+    font-family: "anton";
+    font-size: 20pt;
+    letter-spacing: 1px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}

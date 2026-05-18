@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #f27c22, #f05aaa, #2636d9);
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+
+nav a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+.main-header {
+  background-color: #0019ff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 60px;
+}
+
+.logo-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
+/* ARTIST ROLLER */
+.artist-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fbf1e1;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.artist-text {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 30s linear infinite;
+}
+
+.artist-move {
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.artist-move span {
+  margin-right: 50px;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* MENU */
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 10px;
+  background: #fbf1e1;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.menu-bar a:hover {
+  background: #ff007f;
+  color: white;
+}
+
+/* Desktop menu */
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar {
+  width: 100%;
+}
+
+/* Hamurger hidden on desktop */
+.hamburger {
+  position: absolute;
+  left: 20px;
+  display: none;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #ff007f;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    z-index: 1100;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fbf1e1;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 20px;
+
+    z-index: 1000;
+  }
+  .navbar.active {
+    transform: translateX(0);
+  }
+  .menu-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-bar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    background: none;
+    border-radius: none;
+    transition: 0.3s;
+  }
+}
+
+/* FRONT IMAGE */
+.front-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.3rem;
+}
+
+
+
+/* COUNTDOWN */
+.countdown-container h2 {
+  font-family: "Anton", sans-serif;
+  padding-top: 2rem;
+}
+.countdown-container {
+  text-align: center;
+  background: #fbf1e1;
+  height: 160px;
+  margin-top: -1.25rem;
+}
+.countdown-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.25rem;
+}
+.box {
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 80px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+.box span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.dold {
+  display: none;
+}
+
+/* INFO */
+.festival-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 80px;
+  padding: 70px;
+  margin-top: -1.5rem;
+  box-sizing: border-box;
+}
+
+.info h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 28px;
+  color: #FBF1E1;
+
+  text-align: center;
+  margin-top: -2.5rem;
+
+}
+.info h2 {
+  font-family: Playfair Display Regular;
+  font-size: 16px;
+  color: #FBF1E1;
+
+  text-align: center;
+  margin: 80px;
+  margin-top: -0.5rem;
+}
+
+/* MAP */
+.festival-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.map {
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+  margin-left: 70px;
+  box-sizing: border-box;
+}
+.map-content h3 {
+  font-family: "Anton", sans-serif;
+  color: #FBF1E1;
+}
+
+.map-item {
+  margin-bottom: 15px;
+}
+/* Map titles */
+.item-title {
+  font-weight: bold;
+  margin: 0 0 2px 0;
+  font-size: 1.1rem;
+  color: #FBF1E1;
+}
+.item-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #FBF1E1;
+}
+
+
+
+/* FOOTER */
+.footer {
+  background: #f7ecd8;
+  margin-top: 80px;
+}
+
+.social-media {
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.social-media h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.social-media p {
+  font-family: "Playfair Display", serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icons img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  gap: 40px;
+}
+
+.faq h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.faq p {
+  margin: 8px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.subscribe p:first-child {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  background: #2336ff;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.footer-bottom img {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.5;
+}
+
+
+@media (min-width: 769px) {
+  .navbar {
+    display: block;
+  }
+}
