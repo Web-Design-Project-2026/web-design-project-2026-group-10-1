@@ -53,11 +53,25 @@
         <a href="line-up.html">LINE-UP</a>
         <a href="tickets.html">TICKETS</a>
         <a href="merch.html">MERCH</a>
-        <a href="cart.html">CART</a>
+        <a href="cart.html" class="cart-link">
+       CART <span id="cart-count">0</span>
+      </a>
     </div>
   </nav>
 
   <main class="page-background">
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-container">
+      <h2>COUNTDOWN TO MIDSOMMAR</h2>
+
+      <div class="countdown-boxes">
+        <div class="box"><span id="days">01</span>Days</div>
+        <div class="box"><span id="hours">01</span>Hours</div>
+        <div class="box"><span id="minutes">01</span>Minutes</div>
+        <div class="box"><span id="seconds">01</span>Seconds</div>
+      </div>
+    </div>
 
    <section class="merch-section">
     <h1>DON’T MISS OUT ON OUR MERCH</h1>
@@ -68,50 +82,98 @@
       <div class="item">
         <p class="price-tag">200 SEK</p>
         <img src="images/shirt.png" alt="Midsommar Shirt" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Shirt"
+        data-price="200"
+        data-image="images/shirt.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">100 SEK</p>
         <img src="images/bag.png" alt="Midsommar Tote bag" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Tote bag"
+        data-price="100"
+        data-image="images/bag.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">200 SEK</p>
         <img src="images/cap.png" alt="Midsommar Cap" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Cap"
+        data-price="200"
+        data-image="images/cap.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">250 SEK</p>
         <img src="images/camera.png" alt="Disposable Camera" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Disposable Camera"
+        data-price="250"
+        data-image="images/camera.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">100 SEK</p>
         <img src="images/bandana.png" alt="Midsommar Bandana" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Bandana"
+        data-price="100"
+        data-image="images/bandana.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">50 SEK</p>
         <img src="images/fan.png" alt="Midsommar Fan" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Fan"
+        data-price="50"
+        data-image="images/fan.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">220 SEK</p>
         <img src="images/bottle.png" alt="Midsommar Water Bottle" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Water Bottle"
+        data-price="220"
+        data-image="images/bottle.png">
+        ADD TO CART
+      </button>
+    </div>
 
       <div class="item">
         <p class="price-tag">150 SEK</p>
         <img src="images/bumbag.png" alt="Midsommar Bumbag" />
-        <button>ADD TO CART</button>
-      </div>
+        <button
+        class="add-to-cart"
+        data-name="Midsommar Bumbag"
+        data-price="150"
+        data-image="images/bumbag.png">
+        ADD TO CART
+      </button>
+     </div>
     </div>
 
     <section class="bestsellers">
@@ -185,6 +247,6 @@
 
   </footer>
 
-  <script src="js/cart.js"></script>
+  <script src="js/merch.js"></script>
   </body>
 </html>
