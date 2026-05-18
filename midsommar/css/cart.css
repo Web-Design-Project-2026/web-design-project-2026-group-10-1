@@ -149,3 +149,43 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+
+#cart-count {
+  background-color: black;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.remove-button {
+  background-color: black;
+  color: white;
+  border-top: 10px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+}
