@@ -9,6 +9,12 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
+
 nav a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
@@ -216,13 +222,14 @@ nav a {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 80px;
   padding: 70px;
   margin-top: -1.5rem;
   box-sizing: border-box;
 }
 
 .info h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Anton", sans-serif;
   font-size: 28px;
   color: #FBF1E1;
 
@@ -240,9 +247,42 @@ nav a {
   margin-top: -0.5rem;
 }
 
-.map {
-  width: 25rem;
+/* MAP */
+.festival-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 20px 0;
 }
+
+.map {
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+  margin-left: 70px;
+  box-sizing: border-box;
+}
+.map-content h3 {
+  font-family: "Anton", sans-serif;
+  color: #FBF1E1;
+}
+
+.map-item {
+  margin-bottom: 15px;
+}
+/* Map titles */
+.item-title {
+  font-weight: bold;
+  margin: 0 0 2px 0;
+  font-size: 1.1rem;
+  color: #FBF1E1;
+}
+.item-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #FBF1E1;
+}
+
 
 
 /* FOOTER */
